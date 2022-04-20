@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+
+    --main-font: 'Fahkwang', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --black: #0F0F0F;
+    --white: #F5F5F5;
+    --gray: #828282;
+}
+
+
+body {
+    background-color: var(--black);
+    min-height: 100vh;
+}
+
+main {
+    height: 80vh;
+}
+
+
+.main-heading {
+    font-family: var(--main-font);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 130px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--white);
+
+}
+
+.main-heading span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.logo,
+.logo:hover {
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+.buttons {}
+
+.buttons button {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.buttons button:last-child {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* footer */
+
+.copyright {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.social-icons {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+
+}
+
+.social-icons a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Modals */
+.btn-form-submit,
+.btn-form-submit:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.modal .title {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--black);
+}
+
+.modal p {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.modal .col-form-label {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+.modal .form-control {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #4F4F4F;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.modal .form-control:not(:placeholder-shown),
+.modal .form-select:selected {
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: var(--black);
+}
+
+.modal select>option {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--black);
+}
+
+.modal select>option:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
