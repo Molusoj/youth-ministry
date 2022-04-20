@@ -2,55 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Youth Ministry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-
     <nav class="container py-3 vh-10">
         <div class="row">
-            <div class="col-md-6">
-                <a href="/" class="logo"> The Youth <br> Ministry</a>
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                <a href="/" class="logo">
+                    The Youth <br />
+                    Ministry</a>
             </div>
-            <div class="col-md-6 d-flex justify-content-end">
-                <div class=" buttons">
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal">Join
-                        our community <i class="fas fa-bolt"></i> </button>
-                    <button data-bs-toggle="modal" data-bs-target="#suggestionFormModal" class="btn text-underline">Make
-                        suggestion</button>
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                <div class="buttons">
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                        Join our community <i class="fas fa-bolt"></i>
+                    </button>
+                    <button data-bs-toggle="modal" data-bs-target="#suggestionFormModal" class="btn text-underline">
+                        Make suggestion
+                    </button>
                 </div>
             </div>
         </div>
-
     </nav>
 
     <main>
-        <h1 class="main-heading">Nisl nisl feugiat mattis
-            <span> convallis amet, at orci noi
-            </span>
-            convallis amet, at orci
-        </h1>
-    </main>
+        <section>
+            <div class="main-heading-scroll">
+                <div class=" m-scroll__title">
+                    <div class="ltr">
+                        <h1 class="main-heading">Nisl nisl feugiat mattis</h1>
+                    </div>
 
+                </div>
+            </div>
+            <div class="main-heading-scroll">
+                <div class=" m-scroll__title">
+
+                    <div class="rtl">
+                        <h1 class="main-heading-outline">convallis amet, at orci noi</h1>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="main-heading-scroll">
+                <div class=" m-scroll__title">
+
+                    <div class="ltr">
+                        <h1 class="main-heading">convallis amet, at orci</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
 
     <footer class="vh-10">
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <p class="copyright">
-                        &copy; 2022 The Elevation Church
-                    </p>
+                    <p class="copyright">&copy; 2022 The Elevation Church</p>
                 </div>
                 <div class="col-md-2">
                     <div class="social-icons">
@@ -58,18 +82,11 @@
                         <a href="#" class=""> <i class="fab fa-linkedin"></i> </a>
                         <a href="#" class=""> <i class="fab fa-facebook"></i> </a>
                         <a href="#" class=""> <i class="fab fa-instagram"></i> </a>
-
                     </div>
-
                 </div>
             </div>
         </div>
-
-
-
-
     </footer>
-
 
     <!-- Modals -->
 
@@ -78,15 +95,17 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="title">Sign Up</h2>
-                    <p>Kindly take out time to provide us with the following information</p>
+                    <p>
+                        Kindly take out time to provide us with the following information
+                    </p>
                     <form>
                         <div class="mb-1">
                             <label for="full-name" class="col-form-label">Your full name</label>
-                            <input type="text" class="form-control" id="full-name" placeholder="First name first">
+                            <input type="text" class="form-control" id="full-name" placeholder="First name first" />
                         </div>
                         <div class="mb-1">
                             <label for="phone-number" class="col-form-label">Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="080-XXX-XXXX" id="phone-number">
+                            <input type="tel" class="form-control" placeholder="080-XXX-XXXX" id="phone-number" />
                         </div>
                         <div class="mb-1">
                             <label for="expression" class="col-form-label">Which expression do you attend?</label>
@@ -95,7 +114,9 @@
                                 <option value="Online Church">Online Church</option>
                                 <option value="Island Centre">Island Centre</option>
                                 <option value="LifePointe Centre">LifePointe Centre</option>
-                                <option value="Greater Lekki Centre">Greater Lekki Centre</option>
+                                <option value="Greater Lekki Centre">
+                                    Greater Lekki Centre
+                                </option>
                                 <option value="Ikoyi Centre">Ikoyi Centre</option>
                                 <option value="ECC Canada">ECC Canada</option>
                                 <option value="London Centre">London Centre</option>
@@ -104,7 +125,7 @@
                         <div class="mb-1">
                             <label for="occupation" class="col-form-label">What is your occupation?</label>
                             <input type="text" class="form-control" id="occupation"
-                                placeholder="Type your occupation...">
+                                placeholder="Type your occupation..." />
                         </div>
                         <div class="mb-1">
                             <label for="volunteer" class="col-form-label">Would you like to volunteer?</label>
@@ -115,16 +136,14 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-form-submit w-100 mt-3">Submit form</button>
-
-
+                        <button type="submit" class="btn btn-form-submit w-100 mt-3">
+                            Submit form
+                        </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
-
 
     <div class="modal fade" tabindex="-1" id="suggestionFormModal" tabindex="-1"
         aria-labelledby="Suggestion form Modal">
@@ -132,42 +151,46 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="title">Suggestion form</h2>
-                    <p>Kindly take out time to provide us with the following information</p>
+                    <p>
+                        Kindly take out time to provide us with the following information
+                    </p>
                     <form>
                         <div class="mb-3">
                             <label for="full-name" class="col-form-label">What's your first name or alias ?</label>
-                            <input type="text" class="form-control" id="full-name" placeholder="Type here...">
+                            <input type="text" class="form-control" id="full-name" placeholder="Type here..." />
                         </div>
                         <div class="mb-3">
                             <label for="what-you-like" class="col-form-label">What do you like about what we do at the
-                                Youth Ministry?</label>
+                                Youth
+                                Ministry?</label>
                             <textarea class="form-control" id="what-you-like"
                                 placeholder="Start typing here..."></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="what-you-dont-like" class="col-form-label">What don't you like about what we do
-                                at
-                                the Youth Ministry?</label>
+                                at the Youth
+                                Ministry?</label>
                             <textarea class="form-control" id="what-you-dont-like"
                                 placeholder="Start typing here..."></textarea>
                         </div>
                         <div class="mb-1">
-                            <label for="suggestions" class="col-form-label">Kindly give us suggestions on how to
-                                make the youth ministry better for you</label>
+                            <label for="suggestions" class="col-form-label">Kindly give us suggestions on how to make
+                                the youth ministry
+                                better for you</label>
                             <textarea class="form-control" id="suggestions"
                                 placeholder="Start typing here..."></textarea>
                         </div>
 
-
-                        <button type=" submit" class="btn btn-form-submit w-100 mt-3">Submit form</button>
-
-
+                        <button type=" submit" class="btn btn-form-submit w-100 mt-3">
+                            Submit form
+                        </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -179,7 +202,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
         integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
         crossorigin="anonymous"></script>
-
 
     <script src="./assets/js/main.js"></script>
 </body>
