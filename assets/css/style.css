@@ -17,6 +17,8 @@ body {
 
 main {
     height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -160,4 +162,23 @@ main {
 .modal select>option:hover {
     color: var(--white);
     background-color: var(--black);
+}
+
+
+/* MEdia Screan 426px */
+@media screen and (max-width: 1023px) {
+    .main-heading {
+        font-size: 75px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 46px
+    }
+
+    .main-heading span {
+        -webkit-text-stroke-width: 1px;
+    }
 }
