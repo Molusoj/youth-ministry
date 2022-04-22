@@ -101,18 +101,20 @@
                     <p>
                         Kindly take out time to provide us with the following information
                     </p>
-                    <form>
+                    <form id="signUpForm">
                         <div class="mb-1">
                             <label for="full-name" class="col-form-label">Your full name</label>
-                            <input type="text" class="form-control" id="full-name" placeholder="First name first" />
+                            <input type="text" class="form-control" id="full-name" placeholder="First name first"
+                                required />
                         </div>
                         <div class="mb-1">
                             <label for="phone-number" class="col-form-label">Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="080-XXX-XXXX" id="phone-number" />
+                            <input type="tel" class="form-control" placeholder="080-XXX-XXXX" id="phone-number"
+                                required />
                         </div>
                         <div class="mb-1">
                             <label for="expression" class="col-form-label">Which expression do you attend?</label>
-                            <select class="form-select" aria-label="occupation">
+                            <select class="form-select" aria-label="expression" required>
                                 <option selected>Choose</option>
                                 <option value="Online Church">Online Church</option>
                                 <option value="Island Centre">Island Centre</option>
@@ -128,7 +130,7 @@
                         <div class="mb-1">
                             <label for="occupation" class="col-form-label">What is your occupation?</label>
                             <input type="text" class="form-control" id="occupation"
-                                placeholder="Type your occupation..." />
+                                placeholder="Type your occupation..." required />
                         </div>
                         <div class="mb-1">
                             <label for="volunteer" class="col-form-label">Would you like to volunteer?</label>
@@ -160,28 +162,14 @@
                     <form>
                         <div class="mb-3">
                             <label for="full-name" class="col-form-label">What's your first name or alias ?</label>
-                            <input type="text" class="form-control" id="full-name" placeholder="Type here..." />
-                        </div>
-                        <div class="mb-3">
-                            <label for="what-you-like" class="col-form-label">What do you like about what we do at the
-                                Youth
-                                Ministry?</label>
-                            <textarea class="form-control" id="what-you-like"
-                                placeholder="Start typing here..."></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="what-you-dont-like" class="col-form-label">What don't you like about what we do
-                                at the Youth
-                                Ministry?</label>
-                            <textarea class="form-control" id="what-you-dont-like"
-                                placeholder="Start typing here..."></textarea>
+                            <input type="text" class="form-control" id="full-name" placeholder="Type here..."
+                                required />
                         </div>
                         <div class="mb-1">
                             <label for="suggestions" class="col-form-label">Kindly give us suggestions on how to make
-                                the youth ministry
-                                better for you</label>
-                            <textarea class="form-control" id="suggestions"
-                                placeholder="Start typing here..."></textarea>
+                                the youth ministry better for you</label>
+                            <textarea class="form-control" id="suggestions" placeholder="Start typing here..."
+                                required></textarea>
                         </div>
 
                         <button type=" submit" class="btn btn-form-submit w-100 mt-3">
