@@ -41,10 +41,6 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
 const signUpForm = document.querySelector("#signUpForm");
 
-// const NAME_REQUIRED = "Please enter your name";
-// const EMAIL_REQUIRED = "Please enter your email";
-// const EMAIL_INVALID = "Please enter a correct email address format";
-
 signUpForm.addEventListener("submit", function (event) {
   // stop form submission
   event.preventDefault();
@@ -52,18 +48,37 @@ signUpForm.addEventListener("submit", function (event) {
   // validate the form
   let name = signUpForm.elements["full-name"].value;
   let phone_number = signUpForm.elements["phone-number"].value;
-  let expression = signUpForm.elements["expression"].selectedIndex;
+  let expression = signUpForm.elements["expression"];
   let occupation = signUpForm.elements["occupation"].value;
-  let volunteer = signUpForm.elements["volunteer"].selectedIndex;
+  let volunteer = signUpForm.elements["volunteer"];
 
-  console.log(name, phone_number, expression, occupation, volunteer);
+  $("#signUpForm").modal("hide");
+  $("#signUpSuccessModal").modal("show");
 
-  //   let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-  //   let emailValid = validateEmail(
-  //     form.elements["email"],
-  //     EMAIL_REQUIRED,
-  //     EMAIL_INVALID
-  //   );
-  // if valid, submit the form.
+  console.log(signUpForm);
+});
+
+function nextStep() {
+  var step2 = document.getElementById("step2");
+  var step1 = document.getElementById("step1");
+  if (step2.style.display === "none") {
+    step1.style.display = "none";
+    step2.style.display = "block";
+  } else {
+    step2.style.display = "none";
+  }
+}
+
+const suggestionFormModal = document.querySelector("#suggestionFormModal");
+
+suggestionFormModal.addEventListener("submit", function (event) {
+  // stop form submission
+  event.preventDefault();
+
+  // validate the form
+
+  $("#suggestionFormModal").modal("hide");
+  $("#suggestionFormSuccessModal").modal("show");
+
   console.log(signUpForm);
 });

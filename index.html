@@ -44,7 +44,7 @@
             <div class="main-heading-scroll">
                 <div class=" m-scroll__title">
                     <div class="ltr">
-                        <h1 class="main-heading">Nisl nisl feugiat mattis</h1>
+                        <h1 class="main-heading">Actively shinning Actively shinning Actively shinning</h1>
                     </div>
 
                 </div>
@@ -53,7 +53,7 @@
                 <div class=" m-scroll__title">
 
                     <div class="rtl">
-                        <h1 class="main-heading-outline">convallis amet, at orci noi</h1>
+                        <h1 class="main-heading-outline">God's Light God's Light God's Light</h1>
                     </div>
 
 
@@ -63,7 +63,8 @@
                 <div class=" m-scroll__title">
 
                     <div class="ltr">
-                        <h1 class="main-heading">convallis amet, at orci</h1>
+                        <h1 class="main-heading">to the world to the world to the world
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -156,30 +157,86 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="title">Suggestion form</h2>
-                    <p>
-                        Kindly take out time to provide us with the following information
-                    </p>
+
                     <form>
-                        <div class="mb-3">
-                            <label for="full-name" class="col-form-label">What's your first name or alias ?</label>
-                            <input type="text" class="form-control" id="full-name" placeholder="Type here..."
-                                required />
-                        </div>
-                        <div class="mb-1">
-                            <label for="suggestions" class="col-form-label">Kindly give us suggestions on how to make
-                                the youth ministry better for you</label>
-                            <textarea class="form-control" id="suggestions" placeholder="Start typing here..."
-                                required></textarea>
+
+
+
+                        <div id="step1">
+                            <p>
+                                Kindly take out time to provide us with the following information
+                            </p>
+                            <div class="mb-3">
+                                <label for="full-name" class="col-form-label">What's your first name or alias ?</label>
+                                <input type="text" class="form-control" id="full-name" placeholder="Type here..."
+                                    required />
+                            </div>
+                            <div class="mb-1">
+                                <label for="suggestions" class="col-form-label">Kindly give us suggestions on how to
+                                    make
+                                    the youth ministry better for you</label>
+                                <textarea class="form-control" id="suggestions" placeholder="Start typing here..."
+                                    required></textarea>
+                            </div>
+                            <button class="btn btn-form-submit w-100 mt-3" onclick="nextStep()">
+                                Proceed
+                            </button>
                         </div>
 
-                        <button type=" submit" class="btn btn-form-submit w-100 mt-3">
-                            Submit form
-                        </button>
+                        <div id="step2" style="display: none;">
+                            <p>
+                                Would you like us to contact you on how best to implement your suggestions? If yes,
+                                kindly fill your phone number. If
+                                no, you can submit the form.
+                            </p>
+                            <div class="mb-3">
+                                <label for="phone-number" class=" col-form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="phone-number" placeholder=" 080-XXX-XXXX" />
+                            </div>
+                            <button type=" submit" class="btn btn-form-submit w-100 mt-3">
+                                Submit form
+                            </button>
+                        </div>
+
+
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" tabindex="-1" id="signUpSuccessModal" tabindex="-1"
+        aria-labelledby="Sign UP form Success Modal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="title">Sign Up form</h2>
+                    <p>
+                        Thank you for taking time to sign up! You'll be the first to know when we launch. </p>
+                    <button type="button" class=" d-block btn btn-default text-center mt-3" data-dismiss="modal">Go
+                        Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="suggestionFormSuccessModal" tabindex="-1"
+        aria-labelledby="Suggestion form Success Modal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="title">Suggestion form</h2>
+                    <p>
+                        Thank you for taking time to share your thoughts. We would take them seriously, and contact you
+                        if you indicated. </p>
+                    <button type="button" class=" d-block btn btn-default mt-3 mx-auto" data-dismiss="modal">Go
+                        Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

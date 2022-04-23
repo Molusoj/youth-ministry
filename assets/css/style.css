@@ -75,20 +75,20 @@ main {
     width: 100%;
     height: 100%;
     white-space: nowrap;
-    transform: scale(2);
+    transform: scale(1.5);
     transition: all 1s ease;
 }
 
 .m-scroll__title .ltr {
     display: flex;
-    -webkit-animation: scrollText 33s infinite linear;
-    animation: scrollText 33s infinite linear;
+    -webkit-animation: scrollText 20s infinite linear;
+    animation: scrollText 20s infinite linear;
 }
 
 .m-scroll__title .rtl {
     display: flex;
-    -webkit-animation: scrollTextToLeft 33s infinite linear;
-    animation: scrollTextToLeft 33s infinite linear;
+    -webkit-animation: scrollTextToLeft 20s infinite linear;
+    animation: scrollTextToLeft 20s infinite linear;
 }
 
 @-webkit-keyframes scrollText {
